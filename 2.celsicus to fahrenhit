@@ -1,0 +1,13 @@
+class celsiustofahrenheit { 
+    public static void main(String[] args) 
+    { 
+        scanner sc=new scanner(System.in)
+        double celsius , fahrenheit ; 
+system.out.println("Enter celsius value:");
+      celsius=sc.nextDouble();
+        fahrenheit = ((5/9) * celsius) - 32; 
+        System.out.println( 
+            " value of temperature in fahrenheit:"
+            + fahrenheit); 
+    } 
+}

@@ -1,0 +1,11 @@
+import java.util.*;
+class Area
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+float a=3.14f;
+int r=sc.nextInt();
+System.out.println("output:"+a*r*r);
+}
+}

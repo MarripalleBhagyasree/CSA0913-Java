@@ -1,0 +1,31 @@
+class Employee
+{
+int s;
+void getsalary()
+{
+s=50000;
+}
+}
+class manager extends Employee
+{
+int ta,hra,totalsal;
+void getsalary()
+{
+super.getsalary();
+ta=100;
+hra=730;
+totalsal=s+ta+hra;
+}
+
+void display()
+{
+System.out.println("employee salary: "+s);
+System.out.println("manager Salary: "+totalsal);
+}
+public static void main(String args[])
+{
+	manager m=new manager();
+	m.getsalary();
+	m.display();
+}
+}

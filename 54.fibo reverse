@@ -1,0 +1,26 @@
+class fibo extends Thread
+{
+public void run()
+{
+int a=0,b=1,c,n=10,i;
+{
+for(i=0;i<=n;i++)
+{
+c=a+b;
+b=a;
+a=c;
+}
+System.out.println(a);
+}
+}
+}
+
+class reverseorder extends Thread {
+    public static void main(String args[]) {
+        System.out.println("Reverse Order:");
+        for (int i = 10; i >= 1; --i) {
+            System.out.print(i + ", ");
+        }
+        System.out.println();
+    }
+}

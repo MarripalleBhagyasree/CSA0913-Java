@@ -1,0 +1,53 @@
+class number extends Thread
+{
+	public void run()
+	{	
+		int n=151,rem=0,rev=0,temp;
+		{
+		temp=n;
+		while(n!=0)
+			{
+				rem=n%10;
+				rev=10*rev+rem;
+				n=n/10;
+			}
+		if(n==rev)	
+			{
+				System.out.println("is palindrome");
+			}
+		else
+			{
+				System.out.println("not palindrome");
+			}
+		}
+	}
+}
+class string extends Thread
+{
+	public void run()
+		{
+			String s="Madam",rev=" ";
+			int length=s.length();
+			for(int i=length-1;i>=0;i++)
+				rev=rev+s.charAt(i);
+				if(s.equals(rev))
+				{
+					System.out.println("is palindrome");
+				}
+				else
+				{
+					System.out.println("is not palindrome");
+				}
+		}
+}
+
+class palindrome
+{
+	public static void main(String args[])
+		{
+			number n=new number();
+			string str=new string();
+			n.start();
+			str.start();
+		}
+}

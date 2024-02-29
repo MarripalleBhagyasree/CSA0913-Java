@@ -1,0 +1,65 @@
+class vehicle
+{
+string lincenseplate=" ";
+String owner=" ";
+}
+class car extends vehicle
+{
+string name="Seltos";
+string model="kia";
+string color="red";
+int price=1600000;
+int tyres=5;
+void display()
+{
+Lincenseolate="AP12AB86666";
+owner="janu";
+System.out.println("Car details:");
+System.out.println(owner+" "+licenseplate+" "+name+" "+model+" "+color+" "+price+" "+tyres+" ");
+}
+}
+
+class MotorCycle extends vehicle
+{
+string name="Jupiter";
+string model="ZX";
+string color="black";
+int price=100000;
+int tyres=2;
+void display()
+{
+Lincenseolate="AP04CH0876";
+owner="harshitha";
+System.out.println("MotorCycle details:");
+}
+}
+
+
+class truck extends vehicle
+{
+String name="BharathBenz";
+String model="3528c";
+String color="White";
+int price=7000000;
+int tyres=9;
+void display()
+{
+Lincenseolate="AP12DH3412";
+owner="Anil";
+System.out.println("Truck details:");
+System.out.println(owner+" "+licenseplate+" "+name+" "+model+" "+color+" "+price+" "+tyres+" ");
+}
+}
+
+public static void main(String args[])
+{
+	car c=new car();
+	MotorCycle mc=new MotorCycle();
+	truck t=new truck();
+	
+	c.display();
+	mc.display();
+	t.display();
+}
+}
+
